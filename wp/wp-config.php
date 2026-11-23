@@ -126,8 +126,8 @@ if (isset($_ENV['S3_KEY_ID']) && isset($_ENV['S3_ACCESS_KEY'])) {
 }
 
 // Disable file modification because the changes won't be persisted.
-define('DISALLOW_FILE_EDIT', true );
-define('DISALLOW_FILE_MODS', true );
+define('DISALLOW_FILE_EDIT', false );
+define('DISALLOW_FILE_MODS', false );
 
 // If using SQLite (S3 or Vercel Blob) instead of MySQL/MariaDB. Node owns this
 // decision (util/storage.js) and signals it with the header below, which the
